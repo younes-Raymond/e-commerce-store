@@ -70,14 +70,15 @@ const SingleProduct = () => {
                 </div>
 
                 <div className="card-content">
-                  <div className="product-price">
-                    <div className="price">
-                      &#8377; {currentProduct.discountedPrice}
-                    </div>
-                    <div className="previous-price">
-                      &#8377; {currentProduct.price}
-                    </div>
-                  </div>
+                <div className="product-price">
+  <div className="price">
+    &#36; {currentProduct.discountedPrice}
+  </div>
+  <div className="previous-price">
+    &#36; {currentProduct.price}
+  </div>
+</div>
+
                   <div className="discount">{currentProduct.discount}% off</div>
                 </div>
 

@@ -9,20 +9,32 @@ const Footer = () => {
     <footer className={`${showFilter ? "hide-div" : null}`}>
       <div className="about">
         <Link to="/" className="nav-brand">
-          Essence
+          BestDeal Buddy
         </Link>
 
-        <div className="text">Choose from our wide variety of fragrances</div>
+        <div className="text">Discover the best deals on a wide range of products</div>
 
         <div className="social">
-          <a href="https://github.com/himadri2110" target="_blank">
+          <a href="https://github.com/younes-Raymond/e-commerce-store" target="_blank">
             <i className="fa fa-github"></i>
           </a>
-          <a href="https://twitter.com/himadri2110" target="_blank">
+          <a href="https://twitter.com/younesraymond1" target="_blank">
             <i className="fa fa-twitter"></i>
           </a>
-          <a href="https://linkedin.com/in/himadri2110" target="_blank">
+          <a href="https://www.linkedin.com/in/younes-raymond-188a40241/" target="_blank">
             <i className="fa fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/younes-Raymond/e-commerce-store" target="_blank">
+            <i className="fa fa-facebook"></i>
+          </a>
+          <a href="https://github.com/younes-Raymond/e-commerce-store" target="_blank">
+            <i className="fa fa-instagram"></i>
+          </a>
+          <a href="https://github.com/younes-Raymond/e-commerce-store" target="_blank">
+            <i className="fa fa-reddit"></i>
+          </a>
+          <a href="https://github.com/younes-Raymond/e-commerce-store" target="_blank">
+            <i className="fa fa-earth"></i>
           </a>
         </div>
       </div>
@@ -44,14 +56,15 @@ const Footer = () => {
         <div className="heading">Contact Us</div>
 
         <div className="sub-heading address">
-          <i className="fa fa-map-marker"></i>212 Oakbrook Center, Indiana
+          <i className="fa fa-map-marker"></i>Rabat , H 12 Temara 
         </div>
         <div className="sub-heading phone">
-          <i className="fa fa-phone"></i>+91 21200 21200
+          <i className="fa fa-phone"></i>+212 694-823014
         </div>
         <div className="sub-heading e-mail">
-          <i className="fa fa-envelope"></i>support@essence.com
+          <i className="fa fa-envelope"></i>support@amason.com
         </div>
+        
       </div>
     </footer>
   );

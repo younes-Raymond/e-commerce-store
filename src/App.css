@@ -1,8 +1,51 @@
 @import url("https://capture-ui.netlify.app/css/components.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+
 :root {
   --box-shadow: 2px 2px 2px 0 var(--bg-color);
+
+  --primary-color: #ff9900; /* Amazon's yellow color */
+  --primary-hover: #e68a00; /* Darker shade for hover */
+  --primary-disabled: #cccccc; /* Lighter shade for disabled */
+
+  --white: #ffffff;
+  --bg-color: #f4f4f4; /* Background color similar to Amazon */
+  --bg-secondary: #e0e0e0; /* Secondary background color */
+
+  --black: #000000;
+  --text-color: #232f3e; /* Text color similar to Amazon */
+  --text-secondary: #6c757d; /* Secondary text color */
+
+  --border-radius: 0.25rem;
+
+  --status-online: #28a745; /* Green status */
+  --status-offline: #6c757d; /* Grey status */
+  --status-dnd: #dc3545; /* Red status */
+
+  --success-bg: #d4edda; /* Success background */
+  --success-color: #155724; /* Success text color */
+  --success-hover: #c3e6cb; /* Success hover background */
+
+  --warning-bg: #fff3cd; /* Warning background */
+  --warning-color: #856404; /* Warning text color */
+  --warning-hover: #ffeeba; /* Warning hover background */
+
+  --danger-bg: #f8d7da; /* Danger background */
+  --danger-color: #721c24; /* Danger text color */
+  --danger-hover: #f5c6cb; /* Danger hover background */
+
+  --heading-1: 36px; /* Adjusted heading sizes */
+  --heading-2: 24px;
+  --heading-3: 18px;
+  --heading-4: 16px;
+  --heading-5: 14px;
+
+  --line-ht-1: 48px; /* Adjusted line heights */
+  --line-ht-2: 32px;
+  --line-ht-3: 24px;
+  --line-ht-4: 20px;
+  --line-ht-5: 16px;
 }
 
 * {

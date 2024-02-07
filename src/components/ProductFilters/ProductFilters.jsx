@@ -88,8 +88,8 @@ const ProductFilters = () => {
             <label>
               <input
                 type="checkbox"
-                checked={productState.brand.includes("FOGG")}
-                value="FOGG"
+                checked={productState.brand.includes("SAMSUNG")}
+                value="SAMSUNG"
                 onChange={(e) =>
                   productDispatch({
                     type: BRAND,
@@ -97,13 +97,13 @@ const ProductFilters = () => {
                   })
                 }
               />{" "}
-              Fogg
+              SAMSUNG
             </label>
             <label>
               <input
                 type="checkbox"
-                checked={productState.brand.includes("DENVER")}
-                value="DENVER"
+                checked={productState.brand.includes("APPLE")}
+                value="APPLE"  
                 onChange={(e) =>
                   productDispatch({
                     type: BRAND,
@@ -111,13 +111,13 @@ const ProductFilters = () => {
                   })
                 }
               />{" "}
-              Denver
+              Apple
             </label>
             <label>
               <input
                 type="checkbox"
-                checked={productState.brand.includes("THE MAN COMPANY")}
-                value="THE MAN COMPANY"
+                checked={productState.brand.includes("AMAZON")}
+                value="AMAZON"
                 onChange={(e) =>
                   productDispatch({
                     type: BRAND,
@@ -125,13 +125,13 @@ const ProductFilters = () => {
                   })
                 }
               />{" "}
-              The Man Company
+              AMAZON
             </label>
             <label>
               <input
                 type="checkbox"
-                checked={productState.brand.includes("ENVY")}
-                value="ENVY"
+                checked={productState.brand.includes("NIKON")}
+                value="NIKON"
                 onChange={(e) =>
                   productDispatch({
                     type: BRAND,
@@ -139,13 +139,13 @@ const ProductFilters = () => {
                   })
                 }
               />{" "}
-              Envy
+              NIKON
             </label>
             <label>
               <input
                 type="checkbox"
-                checked={productState.brand.includes("AJMAL")}
-                value="AJMAL"
+                checked={productState.brand.includes("SONY")}
+                value="SONY"
                 onChange={(e) =>
                   productDispatch({
                     type: BRAND,
@@ -153,13 +153,13 @@ const ProductFilters = () => {
                   })
                 }
               />{" "}
-              Ajmal
+              SONY
             </label>
             <label>
               <input
                 type="checkbox"
-                checked={productState.brand.includes("WILD STONE")}
-                value="WILD STONE"
+                checked={productState.brand.includes("HUAWEI")}
+                value="HUAWEI"
                 onChange={(e) =>
                   productDispatch({
                     type: BRAND,
@@ -167,13 +167,13 @@ const ProductFilters = () => {
                   })
                 }
               />{" "}
-              Wild Stone
+              HUAWEI
             </label>
             <label>
               <input
                 type="checkbox"
-                checked={productState.brand.includes("SKINN")}
-                value="SKINN"
+                checked={productState.brand.includes("CANON")}
+                value="CANON"
                 onChange={(e) =>
                   productDispatch({
                     type: BRAND,
@@ -181,7 +181,7 @@ const ProductFilters = () => {
                   })
                 }
               />{" "}
-              Skinn
+              CANON
             </label>
           </div>
         </div>
@@ -189,49 +189,50 @@ const ProductFilters = () => {
         <div className="filter-wrapper">
           <div className="filter-title">Category</div>
           <div className="filter-value filter-category">
-            <label>
-              <input
-                type="checkbox"
-                value="men"
-                checked={productState.category.includes("men")}
-                onChange={(e) =>
-                  productDispatch({
-                    type: CATEGORY,
-                    payload: { value: e.target.value },
-                  })
-                }
-              />{" "}
-              Men
-            </label>
-            <label>
-              <input
-                type="checkbox"
-                value="women"
-                checked={productState.category.includes("women")}
-                onChange={(e) =>
-                  productDispatch({
-                    type: CATEGORY,
-                    payload: { value: e.target.value },
-                  })
-                }
-              />{" "}
-              Women
-            </label>
-            <label>
-              <input
-                type="checkbox"
-                value="men & women"
-                checked={productState.category.includes("men & women")}
-                onChange={(e) =>
-                  productDispatch({
-                    type: CATEGORY,
-                    payload: { value: e.target.value },
-                  })
-                }
-              />{" "}
-              Men & Women
-            </label>
-          </div>
+  <label>
+    <input
+      type="checkbox"
+      value="Cameras"
+      checked={productState.category.includes("Cameras")}
+      onChange={(e) =>
+        productDispatch({
+          type: CATEGORY,
+          payload: { value: e.target.value },
+        })
+      }
+    />{" "}
+    Cameras
+  </label>
+  <label>
+    <input
+      type="checkbox"
+      value="Laptops & PCs"
+      checked={productState.category.includes("Laptops & PCs")}
+      onChange={(e) =>
+        productDispatch({
+          type: CATEGORY,
+          payload: { value: e.target.value },
+        })
+      }
+    />{" "}
+    Laptops & PCs
+  </label>
+  <label>
+    <input
+      type="checkbox"
+      value="Smart Devices"
+      checked={productState.category.includes("Smart Devices")}
+      onChange={(e) =>
+        productDispatch({
+          type: CATEGORY,
+          payload: { value: e.target.value },
+        })
+      }
+    />{" "}
+    Smart Devices
+  </label>
+</div>
+
         </div>
 
         <div className="filter-wrapper">

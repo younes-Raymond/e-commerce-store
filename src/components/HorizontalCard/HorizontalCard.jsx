@@ -22,7 +22,7 @@ const HorizontalCard = ({ product }) => {
             <p className="heading">{title}</p>
 
             <div className="card-content">
-              <div className="price">&#8377; {price}</div>
+              <div className="price">&#36; {price}</div>
             </div>
           </Link>
 

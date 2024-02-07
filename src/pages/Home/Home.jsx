@@ -1,4 +1,5 @@
 import "./Home.css";
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { Navbar } from "../../components/Navbar/Navbar";
 import { Footer } from "../../components/Footer/Footer";
@@ -9,6 +10,26 @@ import { useProducts } from "../../contexts/productContext";
 const Home = () => {
   const { productState, productDispatch, filterTypes } = useProducts();
   const { CATEGORY, CLEAR_FILTERS } = filterTypes;
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const slides = [
+    "/assets/SlideShowImg/1.png",
+    "/assets/SlideShowImg/2.png",
+    "/assets/SlideShowImg/3.png",
+    "/assets/SlideShowImg/4.png",
+    "/assets/SlideShowImg/5.png",
+    "/assets/SlideShowImg/6.png",
+    "/assets/SlideShowImg/7.png",
+    "/assets/SlideShowImg/8.png",
+    //add more images
+  ];
+  const slideInterval = 2500;
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, slideInterval);
+
+    return () => clearInterval(intervalId);
+  }, [slides.length, slideInterval]);
 
   return (
     <div className="page-wrapper">
@@ -17,20 +38,21 @@ const Home = () => {
       <section className="main-section">
         <div className="hero">
           <div className="hero-img">
-            <img className="resp-img" src="/assets/hero-img.jpg" alt="Image" />
+          <img className="resp-img" src={slides[currentSlide]} alt="Slide" />
           </div>
 
           <div className="hero-content">
-            <div>
-              Everything's better with a bit of fragrance
-              <p className="sub-title">
-                Choose from our wide variety of fragrances
-              </p>
-              <Link to="/products" className="hero-action">
-                <button className="btn btn-primary">Shop Now</button>
-              </Link>
-            </div>
-          </div>
+  <div>
+    Find the Best Products at the Best Prices
+    <p className="sub-title">
+      Discover our curated selection of top-quality products at unbeatable prices
+    </p>
+    <Link to="/products" className="hero-action">
+      <button className="btn btn-primary">Explore Deals</button>
+    </Link>
+  </div>
+</div>
+
         </div>
 
         <div className="services-category">

@@ -51,8 +51,8 @@ const ProductCard = ({ product }) => {
 
       <div className={`card-content ${!inStock ? "overlay-bg" : null}`}>
         <div className="product-price">
-          <div className="price">&#8377; {discountedPrice}</div>
-          <div className="previous-price">&#8377; {price}</div>
+          <div className="price">&#36;  {discountedPrice}</div>
+          <div className="previous-price">&#36;  {price}</div>
           <div className="discount">{discount}% off</div>
         </div>
       </div>

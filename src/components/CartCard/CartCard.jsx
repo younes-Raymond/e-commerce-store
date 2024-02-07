@@ -12,7 +12,7 @@ const CartCard = ({ product }) => {
     loading,
   } = useCart();
 
-  return (
+  return ( 
     <div className="card-wrapper basic-card card-horizontal">
       <div className="row">
         <img src={image} className="card-img" alt={title} />
